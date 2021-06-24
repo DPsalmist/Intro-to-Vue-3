@@ -26,7 +26,8 @@
             </ul>
             <!-- Always give/add DOM elements like this a unique key -->
             <div v-for='variant in variants' :key='variant.id'>{{ variant.color }}</div>
-            <div v-for='sock_size in sizes' :key='sock_size.id'>{{ sock_size.size }}</div>
+            <br>
+            <div v-for='(size,index) in sizes' :key='index'>{{ size }}</div>
           </div>
         </div>
       </div>
